@@ -1,0 +1,8 @@
+<%= form_with model: @todo, local: true do |t| %>
+<div class="form-group">
+  <%= t.label :description, "Descripción" %>
+  <%= t.text_field :description, class: 'form-group', placeholder: 'Ej: Ir a comprar pan' %>
+</div>
+  <%= t.submit "Agregar tarea", class: 'form-group' %>
+<%= link_to "Volver", todos_path %>
+<% end %>

@@ -1,0 +1,22 @@
+<h1>Listado de tareas</h1>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-6"><h3>No completadas</h3>
+      <% @todos.each do |t| %>
+        <% if t.completed != true %>
+        <div> <%= t.description %> </div>
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="col-6"><h3>Completadas</h3>
+      <% @todos.each do |t| %>
+        <% if t.completed == true %>
+        <div> <%= t.description %> </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

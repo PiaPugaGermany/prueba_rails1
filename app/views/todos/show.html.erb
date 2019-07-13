@@ -1,0 +1,6 @@
+<h1> Estado de mi lista de tareas </h1>
+<h2> Tarea: <%= @todo.description %> </h2>
+<p> <%= @todo.completed %> </p>
+<p> <%= @todo.created_at %> </p>
+
+<%= link_to "Volver", todos_path %>
